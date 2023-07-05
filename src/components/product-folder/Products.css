@@ -1,0 +1,28 @@
+.products {
+  background-color: rgb(255, 204, 127);
+  color: black;
+  border: 1px solid black;
+  margin-top: 1rem;
+}
+h2 {
+  text-align: center;
+}
+.elements {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: rgb(93, 0, 0);
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+.elements_heading {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: rgb(93, 0, 0);
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  margin-right: 2px;
+  margin-left: 0.5px;
+  font-weight: bolder;
+  text-align: center;
+}
