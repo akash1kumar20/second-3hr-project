@@ -6,7 +6,7 @@ export default function Products_available() {
   const cartCtx = useContext(CartContext);
   const showNow = cartCtx.items.length > 0;
   const decrease = (element) => {
-    cartCtx.addItems({ ...element, quantity: 1 });
+    cartCtx.addItems({ ...element });
   };
 
   return (
@@ -47,11 +47,13 @@ export default function Products_available() {
                   {element.cartQuantity > 0 && (
                     <button
                       className="btn btn-primary btn-sm"
-                      id="btn"
                       onClick={decrease.bind(null, element)}
                     >
                       Add
                     </button>
+                  )}
+                  {!element.cartQuantity > 0 && (
+                    <button className="btn btn-secondary btn-sm">Add</button>
                   )}
                 </div>
               </div>
